@@ -38,3 +38,28 @@ console.log(typeof outsideTemp); //to check the type of datatypes...
 //Number = Number
 //String = string
 //Boolean = boolean 
+
+//************************MEMORY IN JS*****************************//
+//stack(primitive) -when define a variable get a copy of that not original value
+//heap(non primitive) -when defined get the reference of tht variable/original value will be changed if changed any where
+
+let myYoutubename = "smitamishra";
+let anothername = myYoutubename
+anothername = "howareyou"
+console.log(myYoutubename);
+console.log(anothername);
+
+//object..heap memory...
+
+let userOne = {
+    email: "sm@gmail.com",
+    upi: "sm@yybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "sm2@gmail.com"
+userTwo.upi = "sm2@ybl"
+
+console.log(userOne)
+console.log(userTwo)
