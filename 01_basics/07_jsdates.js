@@ -11,10 +11,10 @@ console.log(myCreateDate.toLocaleString())
 let myCreateDatenew = new Date("01-24-2024")
 console.log(myCreateDatenew.toLocaleString())
 
-let myTimestamp = Date.now()
+let myTimestamp = Date.now() //gives timestamp like 122445654 (from 1st jn 1970 to now date) miliseconds
 console.log(myTimestamp) //o/p in milisecs..
 
-console.log(myCreateDatenew.getTime())//converts to milisec...
+console.log(myCreateDatenew.getTime())//converts to milisec... so that 2 dates can be compared
 
 console.log(Math.floor(Date.now()/1000))//converts to secs...
 
