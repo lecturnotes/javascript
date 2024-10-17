@@ -35,3 +35,5 @@ jsuser.greetingTwo = function(){
    }
 console.log(jsuser.greeting())
 console.log(jsuser.greetingTwo())
+
+console.log(jsuser.lastlogindays);
