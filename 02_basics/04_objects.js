@@ -51,3 +51,28 @@ console.log(Object.values(tinderUser))//[ '123', 'Smita', false ]
 console.log(Object.entries(tinderUser))//[ [ 'id', '123' ], [ 'name', 'Smita' ], [ 'isLoggedin', false ] ]
 
 console.log(tinderUser.hasOwnProperty('isLoggedin'))//true
+
+const course = {
+    coursename: "javascript",
+    price:"999",
+    courseInstructor: "smita"
+}
+//console.log(course.courseInstructor)
+const {courseInstructor:instruct}=course //const {} = object name
+console.log(instruct)//smita
+
+//apis
+
+//json format api return
+// {
+//     "coursename": "js",
+//     "name": "smita",
+//     "price": "free"
+// }
+
+//also api reruns in array format like
+[
+    {},
+    {},
+    {}
+]
