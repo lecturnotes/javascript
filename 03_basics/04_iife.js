@@ -6,4 +6,8 @@
 
 ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`)
-})('Smita')
+})('Smita'); //semicolon required to execute nextline code
+
+(function aurCode(){
+    console.log("DB CONNECTED THREE")
+}) ()
