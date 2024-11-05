@@ -13,8 +13,17 @@
 </head>
 <body class="bg-black">
     <div>
-        <h1 id="title" class="heading">DOM learning on chai aur code<span style="display: none;">span content</span></h1>
+        <h1 id="title" class="heading">DOM learning on chai aur code<span style="display: none;">test content</span></h1>
+        <h2>Lorem ipsum dolo</h2>
+        <h2>loreal epson dllo</h2>
+        <h2>loreal epsum rtyy</h2>
         <p>Loreal ipsom sit imate</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
     </div>
 </body>
 </html>
@@ -25,4 +34,61 @@ i->head[i-title,ii-meta]
 i-title->text node
 ii-meta->attribute
 ii->body->div(i-attribute)->h1(i-attribute,ii-text node)->p(i-text node)
+
+//js notes to access above htmls
+document.getElementById('title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+document.getElementById('title').id
+o/p - title
+
+document.getElementById('title').className
+o/p-returns class name if any.
+
+document.getElementById('title').getAttribute('id')
+o/p- title
+
+document.getElementById('title').getAttribute('class')
+o/p-heading
+
+document.getElementById('title').setAttribute('class', 'test')
+o/p-sets new class to tile element 
+
+const title = document.getElementById('title')
+//add styles..
+title.style.backgroundColor = "green"
+title.style.borderRadius = "20px"
+
+//how to add content...
+title.innerText
+= 'DOM learning on chai aur code'
+title.textContent
+=''DOM learning on chai aur code test data' (also gives the display:none element)
+'
+title.innerHTML = returns text with html elements also
+
+document.getElementsByClassName('heading')-gives html collection
+
+//other selectors...
+document.querySelector('h2')-gives the 1st h2 element...
+document.querySelector('#title')
+document.querySelector('.heading')
+document.querySelector('input[type="password"]')//supports css selector..as we write in css to select elements
+<input type=​"password" name id>​
+N.B query selector can work with element, id, class...
+
+document.querySelector('ul')
+<ul>​…​</ul>​
+
+//another way to select elements
+const myul = document.querySelector('ul')
+const myli = myul.querySelector('li')
+<li>​…​</li>​
+
+myli.style.padding="10px"
+myli.style.backgroundColor="black"
+myli.innerText (one)
+
+//querySelectorAll...
+
 -->
