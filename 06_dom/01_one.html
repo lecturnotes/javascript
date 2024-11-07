@@ -20,9 +20,11 @@
         <p>Loreal ipsom sit imate</p>
         <input type="password" name="" id="">
         <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+
         </ul>
     </div>
 </body>
@@ -89,6 +91,48 @@ myli.style.padding="10px"
 myli.style.backgroundColor="black"
 myli.innerText (one)
 
-//querySelectorAll...
+//querySelectorAll...returns values as nodeList
+document.querySelectorAll('li')
+const tempList = document.querySelectorAll('li')
+tempList[0].style.backgroundColor = "green"///its like array but not n array
+
+//example-2
+const tempList = document.querySelectorAll('li')
+tempList[0].style.backgroundColor="green"
+
+//example-3
+const myH1 = document.querySelectorAll('h2')
+myH1[0].style.color="red"
+
+//to apply style to all li element..use forEach loop
+const tempList = document.querySelectorAll('li')
+tempList.forEach( (tl) =>{
+    tl.style.color="red"
+})
+
+//on selecting by className
+const listVal = document.getElementsByClassName('list') //returns HTMLCollection
+//convert into array to access its elements
+Array.from(listVal)
+
+//store in a variable
+const arrform = Array.from(listVal)
+
+//use foreach..
+arrform.forEach( (list)=>{
+    list.style.color="pink"
+})
+
+//AN EXAMPLE FROM JAVASCRIPT WIKI PAGE...
+//selecting all class named - mw-heading
+const classVal = document.querySelectorAll('.mw-heading') //returns nodelist
+
+//change style of all elements as below...
+classVal.forEach( (val) => {
+    val.style.color="orange";
+    val.style.backgroundColor="yellow";
+    val.innerText="Smita"
+})
+
 
 -->
